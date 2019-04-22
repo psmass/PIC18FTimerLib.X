@@ -32,7 +32,7 @@ void main(void) {
     */
     
     int myTimer = new_timer(CONTINUOUS, 5, timerCallbackFuncCont);
-    int myOneShotTimer = new_timer(ONE_SHOT, 5, timerCallbackFuncOneShot);
+    int myOneShotTimer = new_timer(ONE_SHOT, 20, timerCallbackFuncOneShot);
     
     while(1) {
       
