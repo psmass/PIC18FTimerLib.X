@@ -16,4 +16,4 @@ you will need to play with the code with in the appropriate #ifdef in the init_t
 The PIC MCU is mostly event driven with very limited resources (64K program space, 4K RAM, 1K EEPROM). The code is written to use minimal resources for a real time system with no real operation system (yeah, ouch!). The library footprint isbout 8K of code space and 600 bytes of RAM. BTW - if you remove the assert.h (replace with if() range/error case), the actual lib is only about 4KB and 300B RAM.
 
 Note: the gsm.c file is not needed. The uart.c file is also not part of the library but handy to send messages
-as main.c timer callback funcitons demonstrate.
+as main.c timer callback functions demonstrate.
