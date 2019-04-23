@@ -5,7 +5,7 @@ Allows you to create logical timers (16) using any one of the 6 physical PIC Tim
 (uncomment the physical Timer in the PIC18F46K22.h file). Timers may each be configured as either a ONE_SHOT or 
 CONTINOUS mode timer at timer creation time (new_timer(mode, time-value, callback).  When a timer 'fires' the
 callback function is called (note in interrupt context so best to put work on some sort of background work
-queue). The timer lib is intented as part of GSM message timeout where a timeout constitutes an error. The physical
+queue). The timer lib is intended as part of GSM message timeout where a timeout constitutes an error. The physical
 selected timer is configured at compile time via #defines vs. runtime to save space (additonally only one set of 
 timers can be configured so technically a run time decision is not necessary.
 
